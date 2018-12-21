@@ -2,15 +2,16 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
     
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
     
     -webkit-flex-flow: row wrap;
-    justify-content: center;
   }
 
 .project-modal {

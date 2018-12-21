@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Profiles = () => (
-    <div class="container">
+    <div class="content-container">
         <header class="major special">
             <h2>People</h2>
             <p>Meet the people who make up MT Lab</p>

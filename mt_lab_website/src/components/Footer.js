@@ -1,8 +1,13 @@
 import React from 'react';
 
 export const Footer = () => (
-    <p>footer</p>
-    // steal code from the pre-existing footer
+    <footer className="footer">
+        <div className="content-container">
+            <p>footer</p>
+            <p>copyright</p>
+            <p>github gmail twitter etc</p>
+        </div>
+    </footer>
 );
 
 export default Footer;
