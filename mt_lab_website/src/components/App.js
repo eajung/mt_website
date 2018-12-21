@@ -1,10 +1,12 @@
 import React from 'react';
-// import logo from './assets/logo.svg';
-import '../assets/App.scss';
+import ProjectModal from './ProjectModal';
 
 export const App = () => (
-  <div>
-    <p>Content</p>
+  <div className="project-container">
+    <ProjectModal id={1}/>
+    <ProjectModal id={2}/>
+    <ProjectModal id={3}/>
+    <ProjectModal id={4}/>
   </div>
 );
 

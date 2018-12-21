@@ -1,13 +1,10 @@
 import React from 'react';
+import Modal from 'react-modal';
 
-export const ProjectModal = () => (
-    <div className="content-container">
-        <div className="header__content">
-            <p>PROJECT TITLE</p>
-        </div>
-        <div className="project-modal">
-            <p>blah blah blah tensegrity braingineers blah</p>
-        </div>
+Modal.setAppElement("#root");
+export const ProjectModal = (props) => (
+    <div className="project-modal">
+        <p>PROJECT {props.id}</p>
     </div>
 );
 
