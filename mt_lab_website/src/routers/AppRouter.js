@@ -8,6 +8,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import App from '../components/App';
 import Profile from '../components/Profile';
+import Profiles from '../components/Profiles';
 import NotFoundPage from '../components/NotFoundPage';
 
 export const history = createHistory();
@@ -17,6 +18,7 @@ const AppRouter = () => (
             <Header />
             <Switch>
                 <Route path="/" component={App} exact={true}/>
+                <Route path="/profiles" component={Profiles}/>
                 <Route path="/profile/:id" component={Profile}/>
                 <Route component={NotFoundPage}/>
             </Switch>
