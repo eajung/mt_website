@@ -1,14 +1,14 @@
 import React from 'react';
 
-export const Project = () => (
+export const ProjectModal = () => (
     <div className="content-container">
         <div className="header__content">
             <p>PROJECT TITLE</p>
         </div>
-        <div className="project">
+        <div className="project-modal">
             <p>blah blah blah tensegrity braingineers blah</p>
         </div>
     </div>
 );
 
-export default Project;
+export default ProjectModal;

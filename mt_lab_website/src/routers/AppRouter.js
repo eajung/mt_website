@@ -7,7 +7,6 @@ import createHistory from 'history/createBrowserHistory';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import App from '../components/App';
-import Project from '../components/Project';
 import Profile from '../components/Profile';
 import NotFoundPage from '../components/NotFoundPage';
 
@@ -18,7 +17,6 @@ const AppRouter = () => (
             <Header />
             <Switch>
                 <Route path="/" component={App} exact={true}/>
-                <Route path="/project/:id" component={Project}/>
                 <Route path="/profile/:id" component={Profile}/>
                 <Route component={NotFoundPage}/>
             </Switch>
