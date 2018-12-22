@@ -6,7 +6,7 @@ import createHistory from 'history/createBrowserHistory';
 // import components
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import App from '../components/App';
+import LandingPage from '../components/LandingPage';
 import Profile from '../components/Profile';
 import Profiles from '../components/Profiles';
 import NotFoundPage from '../components/NotFoundPage';
@@ -17,7 +17,7 @@ const AppRouter = () => (
         <div>
             <Header />
             <Switch>
-                <Route path="/" component={App} exact={true}/>
+                <Route path="/" component={LandingPage} exact={true}/>
                 <Route path="/profiles" component={Profiles}/>
                 <Route path="/profile/:id" component={Profile}/>
                 <Route component={NotFoundPage}/>
