@@ -3,9 +3,14 @@ import Modal from 'react-modal';
 
 Modal.setAppElement("#root");
 export const ProjectModal = (props) => (
-    <div className="project-modal">
-        <p>PROJECT {props.id}</p>
-    </div>
+    <Modal 
+        className="project-modal"
+        isOpen={props.showModal}
+        onRequestClose={props.onRequestClose}
+        closeTimeoutMS={200}
+    >
+        <p>CATEGORY {props.id}</p>
+    </Modal>
 );
 
 export default ProjectModal;
