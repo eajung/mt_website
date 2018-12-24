@@ -3,14 +3,14 @@ import ProjectModal from './ProjectModal';
 
 const categoryOne = {
   title: "Tensegrity",
-  video: "link to video here",
+  video: "jt_Azprx5_8",
   img: "link to img here",
   img2: "link to img2 here"
 }
 
 const categoryTwo = {
   title: "Braingineers",
-  video: "link to video here",
+  video: "LySYDZ23sqg",
   img: "link to img here",
   img2: "link to img2 here"
 }
