@@ -1,6 +1,39 @@
 import React from 'react';
 import ProjectModal from './ProjectModal';
 
+const categoryOne = {
+  title: "Tensegrity",
+  video: "link to video here",
+  img: "link to img here",
+  img2: "link to img2 here"
+}
+
+const categoryTwo = {
+  title: "Braingineers",
+  video: "link to video here",
+  img: "link to img here",
+  img2: "link to img2 here"
+}
+
+
+const categoryThree = {
+  title: "Category Three",
+  video: "link to video here",
+  img: "link to img here",
+  img2: "link to img2 here"
+}
+
+
+const categoryFour = {
+  title: "Category Four",
+  video: "link to video here",
+  img: "link to img here",
+  img2: "link to img2 here"
+}
+
+
+const categories = [ categoryOne, categoryTwo, categoryThree, categoryFour ];
+
 export class LandingPage extends React.Component { 
   constructor(props) {
     super(props);
@@ -26,24 +59,28 @@ export class LandingPage extends React.Component {
             className="modal category-modal"
             showModal={this.state.showModal1}
             onRequestClose={() => this.setState({ showModal1:false})}
+            data={categories[0]}
           />
           <button className="" onClick={() => this.setState({ showModal2: true })}>TENSEGRITY ROBOTICS</button>
           <ProjectModal 
             className="modal category-modal"
             showModal={this.state.showModal2}
             onRequestClose={() => this.setState({ showModal2:false})}
+            data={categories[1]}
           />
           <button className="" onClick={() => this.setState({ showModal3: true })}>CATEGORY</button>
           <ProjectModal 
             className="modal category-modal"
             showModal={this.state.showModal3}
             onRequestClose={() => this.setState({ showModal3:false})}
+            data={categories[2]}
           />
           <button className="" onClick={() => this.setState({ showModal4: true })}>OTHER CATEGORY</button>
           <ProjectModal 
             className="modal category-modal"
             showModal={this.state.showModal4}
             onRequestClose={() => this.setState({ showModal4:false})}
+            data={categories[3]}
           />
         </div>
       </div>

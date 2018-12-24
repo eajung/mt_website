@@ -9,7 +9,7 @@ export const ProjectModal = (props) => (
         onRequestClose={props.onRequestClose}
         closeTimeoutMS={200}
     >
-        <p>CATEGORY {props.id}</p>
+        <h2>{props.data.title}</h2>
     </Modal>
 );
 
