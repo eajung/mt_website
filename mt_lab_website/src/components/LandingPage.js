@@ -20,15 +20,31 @@ export class LandingPage extends React.Component {
           <h1>Welcome to MT Lab</h1>
           <h3>...where pigs <i>can</i> fly.</h3>
         </div>
-        <div className="project-container">
-          <button className="button button--secondary" onClick={() => this.setState({ showModal1: true })}>Show MODAL 1</button>
-          <ProjectModal id={1} showModal={this.state.showModal1} onRequestClose={() => this.setState({ showModal1:false})}></ProjectModal>
-          <button className="button button--secondary" onClick={() => this.setState({ showModal1: true })}>Show MODAL 2</button>
-          <ProjectModal id={2} showModal={this.state.showModal2} onRequestClose={() => this.setState({ showModal2:false})}/>
-          <button className="button button--secondary" onClick={() => this.setState({ showModal1: true })}>Show MODAL 3</button>
-          <ProjectModal id={3} showModal={this.state.showModal3} onRequestClose={() => this.setState({ showModal3:false})}/>
-          <button className="button button--secondary" onClick={() => this.setState({ showModal1: true })}>Show MODAL 4</button>
-          <ProjectModal id={4} showModal={this.state.showModal4} onRequestClose={() => this.setState({ showModal4:false})}/>
+        <div className="category-container">
+          <button className="" onClick={() => this.setState({ showModal1: true })}>BRAINGINEERS</button>
+          <ProjectModal 
+            className="modal category-modal"
+            showModal={this.state.showModal1}
+            onRequestClose={() => this.setState({ showModal1:false})}
+          />
+          <button className="" onClick={() => this.setState({ showModal2: true })}>TENSEGRITY ROBOTICS</button>
+          <ProjectModal 
+            className="modal category-modal"
+            showModal={this.state.showModal2}
+            onRequestClose={() => this.setState({ showModal2:false})}
+          />
+          <button className="" onClick={() => this.setState({ showModal3: true })}>CATEGORY</button>
+          <ProjectModal 
+            className="modal category-modal"
+            showModal={this.state.showModal3}
+            onRequestClose={() => this.setState({ showModal3:false})}
+          />
+          <button className="" onClick={() => this.setState({ showModal4: true })}>OTHER CATEGORY</button>
+          <ProjectModal 
+            className="modal category-modal"
+            showModal={this.state.showModal4}
+            onRequestClose={() => this.setState({ showModal4:false})}
+          />
         </div>
       </div>
     );
